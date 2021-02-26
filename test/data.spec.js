@@ -1,6 +1,5 @@
 import { example, anotherExample } from '../src/data.js';
 
-
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
@@ -11,7 +10,6 @@ describe('example', () => {
   });
 });
 
-
 describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
@@ -21,3 +19,4 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+
