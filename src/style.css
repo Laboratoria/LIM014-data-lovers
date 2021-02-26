@@ -1,0 +1,465 @@
+*{
+  margin: 0;
+  padding: 0;
+} 
+header {
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 1px 5px #000;  
+}
+body{
+  background-image: url(Fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.headerContent{
+    display: flex;
+    justify-content: space-between;     
+}
+.logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+.mainBar nav {
+    height: 130%;
+    font-size: 25px;   
+}
+.mainBar ul {
+    height: 75%;
+    display: flex;
+}
+.mainBar ul li {
+    height: 100%;
+    margin: 0px 60px;
+    display: flex;
+    align-items: center;
+}
+.mainBar ul li a{
+    color: white;
+    text-decoration: none;
+    border-left: 2px solid #937341;
+    padding-left: 40px;
+}
+#firstHome{
+    background-image: url("PrimerPersonaje1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#titleL{
+   font-size: 45px;
+    color: white;
+    margin-left: 8%;
+    border-left: 15px solid #937341;
+    padding-left: 3%;
+    border-radius: 3%;
+    margin-right: 60%;
+    margin-top: 10%;
+}
+#firstParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 40%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+ #secondHome{
+    background-image: url("Viego2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+ h2{
+   font-size: 50px;
+    color: white;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+ #textSecond{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 65%;
+  }
+#secondParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 55%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+#thirdHome{
+    background-image: url("Sylas2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+ h3{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+ .buttonC{
+  display: flex;
+  justify-content: space-between;
+}
+.buttonC ul {
+    background-color: #FFEA2F;
+    padding: 1% 4%;
+    border-radius: 25px;
+    margin-top: 2.5%;
+    margin-right: 3%;
+    margin-bottom: auto;
+    list-style: none;  
+}
+.buttonC ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
+ #textThird{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 65%;
+  }
+#thirdParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 68%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  h1{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+  }
+  #parraf{
+    display: flex;
+    font-size: 38px;
+    justify-content: center;
+  }
+  #selectors{
+    display: flex;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 1px 5px #000;
+    padding: 1% 5%;
+    width: 800px;
+    margin: 20px auto;
+    height: 25px;
+  }
+  input{
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+  select{
+    background-color: white;
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+#containCards{
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+.cardsPlayers{
+  margin-left: 3%;
+}
+.imgPlayers{
+  width: 252px;
+}
+.namePlayers{
+      background-color: black;
+      padding: 3% 5%;
+      border-radius: 10px;
+      margin-bottom: 10%;
+      margin-top: -5%;
+}
+.imageB{
+  background-color: black;
+  border-color: black;
+}
+.modal{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 102vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+.modalContain{
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 1s;
+  transform: translateY(-1%);
+  transform: translateX(-10%);
+}
+h4{
+  color: #e2a33e;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -6%;
+}
+.modalContent{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  border-radius: 20px 20px 20px 20px;
+  width: 94%;
+  max-width: 960px;
+  margin: 0 13%;
+}
+.modalContent p{
+  color: white;
+  text-align: center;
+  margin-right: 5%;
+}
+.modalContent p br{
+  display: none;
+}
+.modifications{
+  margin-top: 18%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  margin-right: 24%;
+  margin-left: 30%;
+}
+.info{
+  font-size: 17px;
+  margin-top: 12%;
+  margin-bottom: 1%;
+  padding-left: 7%;
+  line-height: 40px;
+}
+.levels{
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  align-items: baseline;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  height: 87px;
+  padding-left: 5%;
+  padding-top: 1%;
+} 
+#close{
+  color: white;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  margin-left: -119px;
+  margin-bottom: 534px;
+  position: relative;
+  width: 40px;
+}
+@media (min-width: 320px) and (max-width: 1023px){ 
+.logo{
+  height: 50px;
+}
+.imgLogo{
+  width: 86px;
+}
+.mainBar nav {
+  font-size: 18px;  
+}
+.mainBar ul li {
+margin: 0px 20px;
+padding-left: 6px;
+}
+.mainBar ul li a{
+padding-left: 15px;
+}
+h1{
+font-size: 35px;
+}
+#titleL{
+border-left: 9px solid #937341;
+}
+#firstParagraph{
+font-size: 13px;
+border-left: 3px solid #937341;
+}
+h2{
+font-size: 27px;
+}
+#textSecond{
+font-size: 13px;
+border-left: 3px solid #937341;
+}
+#secondParagraph{
+font-size: 13px;
+border-left: 3px solid #937341;
+}
+h3{
+font-size: 26px;
+}
+.buttonC ul li a{
+font-size: 91%;
+} 
+#textThird{
+font-size: 13px;
+border-left: 3px solid #937341;
+}
+#thirdParagraph{
+font-size: 13px;
+margin-left: 55%;
+border-left: 3px solid #937341;
+}
+#parraf{
+font-size: 26px;
+}
+#selectors{
+align-content: space-between;
+flex-wrap: wrap;
+justify-content: center;
+width: 396px;
+height: 111px;
+padding: 3% 5%;
+}
+input{
+height: 50px;
+width: 165px;
+margin-left: 1%;
+margin-bottom: 2%;
+}
+select{
+height: 50px;
+width: 165px;
+margin-bottom: 4%;
+margin-left: 2%;
+}
+.imgPlayers{
+width: 143px;
+}
+.modal{
+height: 153vh;
+}
+.modalContain{
+margin-top: -14%;
+}
+h4{
+font-size: 26px;
+}
+.info{
+font-size: 13px;
+}
+.modifications{
+margin-left: 9%;
+margin-right: 12%;
+margin-top: 39%;
+}
+.levels{
+margin-left: 14%;
+padding-right: 8%;
+padding-left: 9%;
+padding-top: 0%;
+justify-content: center;
+}
+}
+@media (min-width: 320px) and (max-width: 599px){
+.headerContent{
+display: inherit;
+}
+.imgLogo{
+width: 100px;
+margin-left: 35%;
+}
+.mainBar nav{
+font-size: 16px;
+}
+.mainBar ul{
+justify-content: center;
+padding-bottom: 3%;
+}
+.mainBar ul li {
+padding-left: 0px;
+}
+.mainBar ul li a {
+padding-left: 12px;
+}
+#titleL{
+ padding-left: 13%;
+}
+#selectors{
+width: 267px;
+height: 84px;
+}
+input{
+height: 35px;
+width: 126px;
+}
+select{
+height: 35px;
+width: 122px;
+}
+.modalContain {
+margin-top: -97%;
+}
+#close{
+font-size: 28px;
+margin-bottom: 825px;
+margin-left: -82px;
+}
+}
+@media (min-width: 600px) and (max-width: 1023px){
+#textThird{
+  margin-top: 3%;
+}
+#thirdParagraph{
+  margin-top: 10%;
+}
+#textSecond{
+margin-top: 3%;
+}
+#secondParagraph{
+  margin-top: 10%;
+}
+#close{
+  font-size: 28px;
+  margin-left: -91px;
+  margin-bottom: 990px;
+}
+
+.modalContent{
+margin-top: -391px;
+}
+
+}
