@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Lovers</title>
+    <link rel="icon" type="image/png" href="iconLogo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContent">
+        <div class="logo">
+          <img src="logo.png" class="imgLogo" alt="logo" width="150">
+        </div>
+        <div class="mainBar">
+          <nav class="navContainer">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="campeones.html">Campeones</a></li>
+              <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index">Quiero Jugar</a></li>  
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  <main>
+  <section id="page">
+  <br>
+  <p id="parraf">Elige a tu </p>
+  <h1>Campeón</h1>
+  <section id= "selectors">
+    <input type="search" id="searchOne" list="search" placeholder=" Buscar">
+  <datalist id="search">
+  </datalist>
+<select class="selector" name="Roles">
+  <option value="" disabled selected>Roles</option>
+  <option value="Assassin">Asesinos</option>
+  <option value="Fighter">Luchadores</option>
+  <option value="Mage">Magos</option>
+  <option value="Marksman">Tiradores</option>
+  <option value="Support">Apoyo</option>
+  <option value="Tank">Tanques</option>
+</select>
+<select class="orden" name="Orden" >
+  <option value="" disabled selected>Orden</option>
+  <option value="az">A-Z</option>
+  <option value="za">Z-A</option>
+</select>
+<select class ="levelPlayers" name="Niveles de Dificultad" >
+  <option value="" disabled selected>Niveles de Dificultad</option>
+  <option value="facil">Fácil</option>
+  <option value="medio">Medio</option>
+  <option value="dificil">Difícil</option>
+</select>
+  </section>
+  <div id="containCards"></div>
+  <div class="modal">
+  <div class="modalContain"></div>
+  <section>
+    <button id="close">X</button>
+  </section>
+  </div>
+  </section>
+</main>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
