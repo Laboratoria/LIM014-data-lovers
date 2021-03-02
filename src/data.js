@@ -1,5 +1,6 @@
  //FILTRADO POR ORDEN AZ-ZA
-export const dataSort = (data, sortBy) => {
+
+ export const dataSort = (data, sortBy) => {
   switch (sortBy){
     case "az":
       return orderFunction(data).reverse()
@@ -8,7 +9,8 @@ export const dataSort = (data, sortBy) => {
     default : 
     return data
   }
-};
+}
+
 export const orderFunction = (data) =>{
   
     return data.sort((a, b)=> {
@@ -20,49 +22,39 @@ export const orderFunction = (data) =>{
        }
        return 0;
      })
-   }
+   };
 
 
+//Filtrado por Niveles
+export const filterLevel = (data, condition) => { 
+  switch (condition) {
+    case 'facil':
+      return data.filter(({ info }) => info.difficulty <= 3);
+    case 'medio':
+      return data.filter(({ info }) => info.difficulty >= 4 && info.difficulty <= 6  );
+    case 'dificil':
+      return data.filter(({ info }) => info.difficulty > 6);
+
+  }
+ };
+
+  
 //FILTRADO POR ROLES
 
-export const filterData = (data, roles) => {
-  let newarray = [];
-  for(let i = 0; i < data.length; i++){
-    for (let a = 0; a < data[i].tags.length; a++){
-      if(data[i].tags[a] === roles){
-        newarray.push(data[i])
-      } else if(roles === ""){
-        return data
-      }
+export const filterData = (data, condition) => {
+  let result = [];
+  for (let i = 0; i < data.length; i++){
+    for (let e = 0; e < data[i].tags.length; e++){
+      if(data[i].tags[e] === condition){
+        result.push(data[i])
       }
     }
-    return newarray;
-  };
+  }
+  return result;
+};
 
 //FILTRADO PARA BUSCADOR
-  export const filterName = (data, name) => {
-    return data.filter( nameFilter => nameFilter.id.includes(name))
-    
-  }
-
-  //FILTRADDO PARA NIVELES DE DIFICULTAD
-
-  export const filterLevel = (data, level) =>{
-    switch (level) {
-      case "facil" : 
-      return data.filter(({info}) => info.difficulty <= 3);
-      case "medio" :
-        return data.filter(({info}) => info.difficulty >=4 && info.difficulty <=6);
-      case "dificil":
-        return data.filter(({info}) => info.difficulty > 6);
-      default:
-        return data;
-    }
+  //Filtrado por Nombre
+  export const filterName = (data, condition) => {
+    return data.filter(nameFilter => nameFilter.id.includes(condition))
   };
-
- 
-
-
-
-
-
