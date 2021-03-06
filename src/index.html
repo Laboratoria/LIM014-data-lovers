@@ -1,12 +1,364 @@
+
 <!DOCTYPE html>
+<html lang="en">
+
+</html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <!-- content="width=device-width el ancho de la pagina web es igual al ancho de la pantalla -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/portalIcon.jpg">
+  <title>Data Lovers</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--sitio web de donde salen los iconos de redes sociales-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body class="background" id="background">
+
+  <!-- start Home  -->
+  <section id="homeSection">
+    <figure class="home">
+    <button id="btnFirst" class="btnFirst">Start</button>
+    </figure>
+  </section>
+
+  <!--header section -->
+  <header class="hide logoHeader" id="logoHeader">
+    <section class="boxName" id="boxName">
+      <img class="icon" src="images/rickMortyIcon.png" alt="Icono Rick y Morty">
+      <img class="logotipe" src="images/rickMortyLogotipe.png" alt="Logotipo de Rick y Morty" width="149" height="467"
+        ;>
+    </section>
+  </header>
+
+
+  <!--principal nav section -->
+
+
+  <nav class="hide barNavegation" id="nav">
+
+    <section id="iconBars" class="iconBars"><i class="fa fa-bars"></i></section>
+
+    <span id="advancedFilter" class="active">
+      <section id="iconBars1" class="iconBars1"><i class="fa fa-bars li"  ></i></section>
+
+
+      <section class="filterSelects">
+        <p><b>Filter:</b></p>
+      <p class="filterId">Status</p>
+      <select id="stateLife">
+        <option value="">--Select--</option>
+        <option value="Alive">Alive</option>
+        <option value="Dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select> 
+      <p class="filterId">Species</p>
+      <select id="species">
+        <option value="">--Select--</option>
+        <option value="Alien">Alien</option>
+        <option value="Animal">Animal</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="Disease">Disease</option>
+        <option value="Human">Human</option>
+        <option value="Humanoid">Humanoid</option>
+        <option value="Mytholog">Mytholog</option>
+        <option value="Parasite">Parasite</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Robot">Robot</option>
+        <option value="Vampire">Vampire</option>
+        <option value="unknown">unknown</option>
+      </select> 
+      <p class="filterId">Gender</p>
+      <select id="gender">
+        <option value="">--Select--</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <p class="filterId">Origin</p>
+      <select id="origin">
+        <option value="">--Select--</option>
+        <option value="Abadango">Abadango</option>
+        <option value="Alphabetrium">Alphabetrium</option>
+        <option value="Anatomy Park">Anatomy Park</option>
+        <option value="Árboles Mentirosos">Árboles Mentirosos</option>
+        <option value="Bepis 9">Bepis 9</option>
+        <option value="Bird World">Bird World</option>
+        <option value="Citadel of Ricks">Citadel of Ricks</option>
+        <option value="Cronenberg Earth">Cronenberg Earth</option>
+        <option value="Detoxifier">Detoxifier</option>
+        <option value="Earth (5-126)">Earth (5-126)</option>
+        <option value="Earth (Chair Dimension)">Earth (Chair Dimension)</option>
+        <option value="Earth (C-137)">Earth (C-137)</option>
+        <option value="Earth (C-500A)">Earth (C-500A)</option>
+        <option value="Earth (D-99)">Earth (D-99)</option>
+        <option value="Earth (D716)">Earth (D716)</option>
+        <option value="Earth (D716-B)">Earth (D716-B)</option>
+        <option value="Earth (D716-C)">Earth (D716-C)</option>
+        <option value="Earth (Evil Rick's Target Dimension)">Earth (Evil Rick's Target Dimension)</option>
+        <option value="Earth (Giant Telepathic Spiders Dimension)">Earth (Giant Telepathic Spiders Dimension)</option>
+        <option value="Earth (J-22)">Earth (J-22)</option>
+        <option value="Earth (J19ζ7)">Earth (J19ζ7)</option>
+        <option value="Earth (K-22)">Earth (K-22)</option>
+        <option value="Earth (K-83)">Earth (K-83)</option>
+        <option value="Earth (Phone Dimension)">Earth (Phone Dimension)</option>
+        <option value="Earth (Pizza Dimension)">Earth (Pizza Dimension)</option>
+        <option value="Earth (Replacement Dimension)">Earth (Replacement Dimension)</option>
+        <option value="Eric Stoltz Mask Eart">Eric Stoltz Mask Eart</option>
+        <option value="Fantasy World">Fantasy World</option>
+        <option value="Gazorpazorp">Gazorpazorp</option>
+        <option value="Gear World">Gear World</option>
+        <option value="Giant's Town">Giant's Town</option>
+        <option value="Girvonesk">Girvonesk</option>
+        <option value="Glaagablaaga">Glaagablaaga</option>
+        <option value="Greasy Grandma World">Greasy Grandma World</option>
+        <option value="Gromflom Prime">Gromflom Prime</option>
+        <option value="Hamster in Butt World">Hamster in Butt World</option>
+        <option value="Hideout Planet">Hideout Planet</option>
+        <option value="Interdimensional Cable">Interdimensional Cable</option>
+        <option value="Krootabulon">Krootabulon</option>
+        <option value="Kyle's Teenyverse">Kyle's Teenyverse</option>
+        <option value="Larva Alien's Planet">Larva Alien's Planet</option>
+        <option value="Mega Gargantuan Kingdom">Mega Gargantuan Kingdom</option>
+        <option value="Mr. Goldenfold's dream">Mr. Goldenfold's dream</option>
+        <option value="Mr. Meeseeks Box">Mr. Meeseeks Box</option>
+        <option value="Nuptia 4">Nuptia 4</option>
+        <option value="Planet Squanch">Planet Squanch</option>
+        <option value="Plopstar">Plopstar</option>
+        <option value="Pluto">Pluto</option>
+        <option value="Post-Apocalyptic Earth">Post-Apocalyptic Earth</option>
+        <option value="Purge Planet">Purge Planet</option>
+        <option value="Rick's Battery Microverse">Rick's Battery Microverse</option>
+        <option value="Resort Planet">Resort Planet</option>
+        <option value="Roy: A Life Well Lived">Roy: A Life Well Lived</option>
+        <option value="Signus 5 Expanse">Signus 5 Expanse</option>
+        <option value="Snuffles' Dream">Snuffles' Dream</option>
+        <option value="Testicle Monster Dimension">Testicle Monster Dimension</option>
+        <option value="The Menagerie">The Menagerie</option>
+        <option value="Trunk World">Trunk World</option>
+        <option value="Unity's Planet">Unity's Planet</option>
+        <option value="Venzenulon 7">Venzenulon 7</option>
+        <option value="Zeep Xanflorp's Miniverse">Zeep Xanflorp's Miniverse</option>
+        <option value="unknown">unknown</option>
+      </select>
+      <p class="filterId">Episode</p>
+
+      <select id="episodes">
+        <option value="">--Select--</option>
+      </select>
+      </section>
+      <button type="button" id="buttonCleanFilter">Clean Filter</button> <br><br>
+    </span>
+
+
+    <ul class="buttonsNavegation">
+      <!-- Attribute Values
+          _blank	Opens the linked document in a new window or tab
+           -->
+      <li class="boxBarNavegation line">
+        <a class="barNavegation1" id="aboutbutton" href="https://rickandmorty.fandom.com/wiki/Rick_and_Morty_(TV_series)" target="_blank">About</a>
+      </li>
+      <span class="lineSpace">|</span>
+      <li class="boxBarNavegation line">
+        <a class="barNavegation1" id="statisticsbutton" href="#">Statistics</a>
+      </li>
+      <span class="lineSpace">|</span>
+      <li class="boxBarNavegation">
+        <a class="barNavegation1" href="https://www.adultswim.com/streams/rick-and-morty" target="_blank">Watch
+          online</a>
+      </li>
+    </ul>
+  </nav>
+  <!--search & order section -->
+  <nav>
+    <section class="nameOrder hide" id="subheaderSection">
+      <section class="subheaderSection">
+        <input type="search" placeholder="Search by name" id="searchByName" src="images/assets/lupa.png" autocomplete="off">
+      </section>
+
+      <select class="subheaderSection" id="order">
+        <option value="" hidden selected> Order </option>
+        <option value="orderAtoZ" id="optionSelect orderAtoZ">A - Z</option>
+        <option value="orderZtoA" id="optionSelect orderZtoA">Z - A</option>
+        <option value="none" id="none">By default</option>
+      </select>
+    </section>
+  </nav>
+
+  <!--Finally, Main character section -->
+  <section id="charactersSection" class="hide">
+    <main class="mainContainer" id="mainContainer">
+      <!-- Cards :D -->
+      <article class="cards listCharacters " id="cards">
+        <!-- <figure class="card">
+              <img src="" alt="">
+              <figcaption>Rick</figcaption>
+            </figure>-->
+      </article>
+      <a href="#myModal"></a>
+      <section id="myModal" class="modal">
+        <section class="modalContent">
+          <p id="xClose" class="close">X</p>
+          <section id="informationModal">
+            <img id="photoModal" src="main.js" alt="">
+            <section id="paragraphModal">
+              <h2>IDENTIFICATION CARD</h2>
+              <p id="statusModal" class="modalInfo">Status:</p>
+              <p id="speciesModal" class="modalInfo">Species:</p>
+              <p id="typeModal" class="modalInfo">Type:</p>
+              <p id="genderModal" class="modalInfo">Gender:</p>
+              <p id="originModal" class="modalInfo">Origin:</p>
+              <p id="locationModal" class="modalInfo">Location:</p>
+              <p id="episodeModal" class="modalInfo"> Episode:</p>
+            </section>
+            <section class="
+            nameModalBottom">
+            <h3 id="nameModal"></h3>
+          </section>
+            
+          </section>
+          
+        </section>
+      </section>
+
+
+      <article id="notFound" class="hide">
+       <p class="messageNotFound">Sorry, not found.</p> 
+      <img class="imageNotFound" src="images/whoIs.gif" alt="Gif character not found">
+      </article>
+
+
+      <!-- Pagination -->
+      <section id="buttonsContainer" class="buttonsContainer active"></section>
+      <!-- character description  -->
+
+      
+
+    </main>
+  </section>
+  <!--oothers about and stat -->
+  <!-- <section id="aboutSection" class="hide">
+    <h1>Rick and Morty</h1>
+    <img class="imgFamilyAbout" src="images/familyRick.png" alt="Rick´s family in a sofa">
+
+    
+    <section class="firstPart">
+      
+      
+
+      <p class="textFirst1" >Rick and Morty is an American animated television series created by Dan Harmon and Justin Roiland that premiered
+        on December 2, 2013 on Cartoon Network's Adult Swim programming block. In Canada, it premiered on January 10, 2016
+        on the Canadian version of Cartoon Network's Adult Swim programming block.</p>
+      <p class="textFirst2">The show's first season consists of 11 twenty-two minute episodes. After airing the first six episodes, [adult
+        swim] renewed the show for a second season, consisting of 10 twenty-two minute episodes. The show was renewed for
+        a third season, consisting of 10 twenty-two minute episodes that aired in the summer of 2017. As of Fall of 2019
+        Rick and Morty came back with a fourth season airing ten episodes with the first half of the season being air in
+        2019 and the second half after new years.</p>
+    </section>
+    <section class="secondPart">
+      <h2 class="secondPart">Plot</h2>
+    <p class="secondPart">After going missing for nearly 20 years, Rick Sanchez suddenly arrives at his daughter Beth’s doorstep looking to
+      move in with her and her family. Beth welcomes him with open arms, but her unremarkable husband Jerry isn’t too
+      thrilled about the tearful reunion as Rick’s arrival serves to shake things up quite a bit around the household.
+      Rick converts the garage into his personal laboratory and gets to work on all sorts of dangerous sci-fi gadgets
+      and contraptions. That wouldn’t be so bad if not for the fact that Rick continues to involve his grandchildren
+      Morty and Summer in his insane adventures. With the exception of the Pilot episode, each episode ends with a
+      post-credits scene.</p>
+    <h2>Characters</h2>
+    <h3>Main</h3>
+    <ul>
+      <li>
+        <h4>Rick Sanchez</h4>
+        <p> A genius scientist and alcoholic whose inventions and experiments serve as the basis for the episodes. The
+          grandfather of Morty Smith and Summer Smith, and the father of Beth. Rick was absent from the family for
+          years, until he finally returned before the Pilot episode to live with the Smith family, much to the
+          disapproval of Jerry. He currently resides in the garage of the Smith house where his entire laboratory is
+          based. Here, he builds new inventions, travels to other dimensions, and tests things out on forms of alien
+          life. </p>
+      </li>
+      <li>
+        <h4>Morty Smith </h4>
+        <p>Rick's impressionable and socially awkward teenage grandson who is often dragged along on his grandfather's
+          escapades. Morty is a wimpy and nervous wreck who desperately tries to keep his sanity when taken on the
+          bizarre and terrifyingly mind-bending adventures that Rick takes him on, which is already big enough of a
+          problem as he already struggles to fit in at his own high school. </p>
+      </li>
+      <li>
+        <h4>Jerry Smith</h4>
+        <p> Morty's insecure father, whose disapproval of Rick's influence on Morty only deepens his marital troubles
+          with Beth. Jerry constantly finds himself to be in a failing marriage with his wife as they always argue and
+          never express the love for each other that most parents do. </p>
+      </li>
+      <li>
+        <h4>Beth Smith</h4>
+        <p>Morty's holier-than-thou mother who is a cardiac surgeon for horses. Beth seems to have problems in her
+          marriage with Jerry and usually considers leaving him for another guy.</p>
+      </li>
+      <li>
+        <h4>Summer Smith</h4>
+        <p>Morty's angst-ridden older sister who occasionally joins Rick on his adventures. She only cares about her
+          friends and social life at school and is easily annoyed by her family, though she sometimes becomes jealous of
+          Morty's relationship with Rick.
+        </p>
+      </li>
+    </ul>
+    <a href="https://rickandmorty.fandom.com/wiki/Rick_and_Morty_(TV_series)" target="_blank">Fuente</a>
+
+
+    </section>
+    
+
+
+  </section> -->
+
+  <section id="statisticsSection" class="hide">
+    <canvas id="chart" width="800" height="400"></canvas>
+  </section>
+  <section class="goTopContainer">
+    <button class="goTopButton">
+      <i class="fa fa-chevron-up"></i>
+
+    </button>
+  </section>
+
+  <!--footer section -->
+  <footer class="hide" id="footerSection">
+    <ul class="socialBars">
+      <!-- Attribute Values
+          _blank	Opens the linked document in a new window or tab
+           -->
+      <li class="linkSocialMedia"><a href="https://www.facebook.com/RickandMorty/" target="_blank" class="fa fa-facebook"></a></li>
+      <li class="linkSocialMedia"><a href="https://twitter.com/rickandmorty" target="_blank " class="fa fa-twitter-square"></a>
+      </li>
+      <li class="linkSocialMedia"><a href="https://www.instagram.com/rickandmorty/?hl=es" target="_blank" class="fa fa-instagram"></a>
+      </li>
+    </ul>
+    <section class="allRightsReserved">
+      <p class="lineFooterDecoration">|</p>
+      <!-- <img src="images/rickFooter.png" alt="Icono de Footer"> -->
+      <section class="footerText">
+        <p> <strong>Laboratoria<br> LIM-014 </strong>  </p>  
+        <span>© <a href="https://github.com/MarytereBenavides/LIM014-data-lovers" target="_blank" >Marytere</a>
+          <span>-</span>
+          <a href="https://github.com/Raquel-95/LIM014-data-lovers" target="_blank" >Raquel</a></span>
+        
+      </section>
+      
+    </section>
+  </footer>
+  <script src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js">
+  </script>
+  <script src="mainApi.js" type="module">
+  </script>
+  
+</body>
+
 </html>

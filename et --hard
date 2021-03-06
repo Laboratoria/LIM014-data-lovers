@@ -1,0 +1,16 @@
+[33mfb60712[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: checkout: moving from user1 to main
+[33mfb60712[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to HEAD^
+[33mc1b28df[m[33m ([m[1;31morigin/user1[m[33m)[m HEAD@{2}: commit: holas
+[33mfb60712[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from main to user1
+[33mfb60712[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{4}: pull: Merge made by the 'recursive' strategy.
+[33mddb10ca[m HEAD@{5}: checkout: moving from develop to main
+[33mc45a820[m HEAD@{6}: commit: x
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{7}: checkout: moving from main to develop
+[33mddb10ca[m HEAD@{8}: commit: Cambios generados del pull
+[33mafcf90f[m HEAD@{9}: pull: Fast-forward
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{10}: reset: moving to HEAD
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{11}: checkout: moving from develop to main
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{12}: checkout: moving from main to develop
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{13}: checkout: moving from develop to main
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{14}: checkout: moving from main to develop
+[33m9d38bed[m[33m ([m[1;31morigin/develop[m[33m)[m HEAD@{15}: clone: from https://github.com/MarytereBenavides/LIM014-data-lovers.git
