@@ -1,12 +1,420 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+<html> 
+    <title> RIO2016 | BEST OLYMPIC DATA </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32[1].png">
   </head>
+  
   <body>
-    <div id="root"></div>
+    <!-- Menú de Navegación -->
+    <main>
+      <header>
+        <nav class="navbar" >
+          <a href="index.html" class="brand">
+          <img src="img/logo.png" alt="rio2016"></a>
+        
+          <div class="menu">
+            <div class="btn">
+              <i class="fas fa-times close-btn"></i>
+          </div>
+          <a id="pageRio" href="#pageRio">RIO 2016</a>
+          <a id="pageCountries" href="#pageCountries">COUNTRIES</a>
+          <a id="pageMedals" href="#pageMedals">MEDALS</a>
+          <a id="pageSports" href="#pageSports">SPORTS</a>
+          <a id="pageAthletes" href="#pageAthletes">ATHLETES</a>
+          </div>
+          <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Page Rio 2016 -->
+      <section id="rioPage" class="pageRio" style="display: block;">
+
+            <div class="mySlides fade">
+              <img src="./img/RIO2016/Simone Biles.svg" style="width:100%">
+              <div class="section-main">Simone Biles</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./img/RIO2016/BOXPSOPLUMA.svg" style="width:100%">
+              <div class="section-main">Robson Conceicao </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./img/RIO2016/Wei Deng .svg" style="width:100%">
+              <div class="section-main">Wei Deng</div>
+            </div>
+            
+              <a class="prev" id="prev" name="-1" >&#10094;</a>
+              <a class="next" id="next" name="1" >&#10095;</a> 
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" id="slide1" name="1"></span> 
+              <span class="dot" id="slide2" name="2"></span> 
+              <span class="dot" id="slide3" name="3"></span> 
+              <!-- <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span> -->
+            </div>
+
+            <section  class="countRio content">
+              <div class="contador ocultar">
+              </div><div class="contador ocultar">
+                <img class="fa-3x" src="./img/iconos/brazil.svg" alt="Brazil">
+                <h2>COUNTRY</h2>
+                <div class="data" data-cantidad-total="2021">Brasil </div>                
+              </div>
+              </div><div class="contador ocultar">
+                <img class="fa-3x" src="./img/iconos/calendar.svg" alt="Dates">
+                <h2>DATES</h2>
+                <div class="data" data-cantidad-total="2021">05 AUG - 21AUG </div>
+                
+              </div>
+              <div class="contador ocultar">
+                <img class="fa-3x" src="./img/iconos/countries.svg" alt="countries">
+                <h2>COUNTRIES</h2>
+                <div class="contador-cantidad" data-cantidad-total="207">0</div>                
+              </div>
+              <div class="contador ocultar wrap">
+                <img class="fa-3x" src="./img/iconos/swimming.svg" alt="Athletes">
+                <h2>ATHLETES</h2>
+                <div class="contador-cantidad" data-cantidad-total="11238">0</div>
+              </div>
+              <div class="contador ocultar">
+                <img class="fa-3x" src="./img/iconos/medal.svg" alt="Medals">
+                <h2>CHAMPIONS</h2>
+                <div class="contador-cantidad" data-cantidad-total="2488">0</div>                
+              </div>
+              <div class="contador ocultar">
+                <img class="fa-3x" src="./img/iconos/mountain-bike.svg" alt="events">
+                <h2>EVENTS</h2>
+                <div class="contador-cantidad" data-cantidad-total="306">0</div>                
+              </div>   
+            </section>
+
+              <section class="section-two">
+                <h2>RIO 2016</h2>
+                <p>Rio de Janeiro 2016 Olympic Games, athletic festival held in Rio de Janeiro that took place August 5–21, 2016. 
+                  The Rio Games were the 28th occurrence of the modern Olympic Games. The event marked the first time that either
+                  the Summer or the Winter Olympics was held in South America.</p>
+              </section> 
+      </section>
+      
+
+      <!-- Page Countries -->
+      <section id="countriesPage" class="pageCountries" style="display: none;">
+        <!-- head -->
+        <div class="countriesPage">
+          <br><h1>FIND THE CHAMPION<br>COUNTRIES</h1><br>
+        </div>
+        <div class="content">
+          <section class="filter-card">
+            <form class="form-search" id="searchC">
+              <input type="text" placeholder=" Pais" id="inputSearchCountries"><i class="fas fa-search"></i>
+            </form>
+          </section>
+        </div>
+        <!-- main -->
+        <div id="mainCountries" class="container">
+        </div>
+      </section>
+
+      <!-- Page Medals -->
+      <section id="medalsPage" class="pageMedals" style="display: none;">
+        <!-- head -->
+        <div class="medalsPage">
+          <br><h1>FIND THE BEST TOP <br>MEDALS</h1><br>
+        </div>
+        <section  class="countRio content">          
+          <div class="contador ocultar">
+            <img class="fa-3x" src="./img/iconos/countries.svg" alt="countries">
+            <h2>COUNTRIES</h2>
+            <div class="contador-cantidad" id="totCountries" data-cantidad-total="">0</div>                
+          </div>
+          <div class="contador ocultar wrap">
+            <img class="fa-3x" src="./img/iconos/running.svg" alt="Athletes">
+            <h2>ATHLETES</h2>
+            <div class="contador-cantidad" id="totAthletes" data-cantidad-total="">0</div>
+          </div>
+          <div class="contador ocultar">
+            <img class="fa-3x" src="./img/iconos/swimmer.svg" alt="Medals">
+            <h2>SPORTS</h2>
+            <div class="contador-cantidad" id="totSports" data-cantidad-total="">0</div>                
+          </div>
+          <div class="contador ocultar">
+            <img class="fa-3x" src="./img/iconos/mountain-bike.svg" alt="events">
+            <h2>EVENTS</h2>
+            <div class="contador-cantidad" id="totEvents" data-cantidad-total="">0</div>                
+          </div>   
+        </section>
+        
+        <section class="Content">
+              <h2 class= "data"> TOP 10 MEDALS</h2>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>PLACE</th>
+                              <th>COUNTRY</th>
+                              <th>GOLD MEDALS</th>
+                              <th>SILVER MEDALS</th>
+                              <th>BRONZE MEDALS</th>
+                              <th>&nbsp;</th>
+                              <th>TOTAL</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>&nbsp;</td>
+                              <td class="tac"><img src="./img/iconos/countries.svg" class="monedas ctimg" alt="Countries"></td>
+                              <td class="tac"><img src="./img/iconos/gold-medals.svg" class="monedas ctimg" alt="Medalla de Oro"></td>
+                              <td class="tac"><img src="./img/iconos/silver-medal.svg" class="monedas ctimg" alt="Medalla de Plata"></td>
+                              <td class="tac"><img src="./img/BM.svg" class="monedas ctimg" alt="Medalla de Bronce"></td>
+                              <td>&nbsp;</td>
+                              <td class="tac"><img src="./img/iconos/podium.svg" class="monedas ctimg" alt="Medalla Oro, Plata y bronce"></td>
+                            </tr>                            
+                            <tr>
+                              <td class="tac medallero" >1</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/ESTADOS-UNIDOS.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >46</td>
+                              <td class="tac medallero" >37</td>
+                              <td class="tac medallero" >38</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">121</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >2</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/REINOUNIDO.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >27</td>
+                              <td class="tac medallero" >23</td>
+                              <td class="tac medallero" >17</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">67</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >3</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/CHINA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >26</td>
+                              <td class="tac medallero" >18</td>
+                              <td class="tac medallero" >26</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">70</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >4</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/RUSIA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >19</td>
+                              <td class="tac medallero" >18</td>
+                              <td class="tac medallero" >19</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">56</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >5</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/ALEMANIA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >17</td>
+                              <td class="tac medallero" >10</td>
+                              <td class="tac medallero" >15</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">42</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >6</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/JAPON.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >12</td>
+                              <td class="tac medallero" >8</td>
+                              <td class="tac medallero" >21</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">41</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >7</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/FRANCIA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >10</td>
+                              <td class="tac medallero" >18</td>
+                              <td class="tac medallero" >14</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">42</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >8</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/COREADELSUR.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >9</td>
+                              <td class="tac medallero" >3</td>
+                              <td class="tac medallero" >9</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">21</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >9</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/ITALIA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >8</td>
+                              <td class="tac medallero" >12</td>
+                              <td class="tac medallero" >8</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">28</td>
+                            </tr>
+                             
+                            <tr>
+                              <td class="tac medallero" >10</td>
+                              <td class="tac medallero" ><img src="http://www.com.org.mx/wp-content/themes/com/images/banderas/AUSTRALIA.png" class="ctimg" alt="Páis Francia"></font></td>
+                              <td class="tac medallero" >8</td>
+                              <td class="tac medallero" >11</td>
+                              <td class="tac medallero" >10</td>
+                              <td>&nbsp;</td>
+                              <td class="tac medallero">29</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                        <br>
+                        <br>
+                        <br>
+        </section>
+      </section>
+
+      <!-- Page Sports -->
+      <section id="sportsPage" class="pageSports"style="display: none;">
+      <!-- head -->
+      <div class="sportsPage">
+        <br><h1>FIND YOUR FAVORITE <br>SPORTS</h1><br>
+      </div>
+      <div class="content">
+        <section class="filter-card">
+          <form class="form-search" id="searchS">
+            <input type="text" placeholder=" Sports" id="inputSearchSports"><i class="fas fa-search"></i>
+          </form>
+        </section>
+      </div>
+      <!-- main -->
+      <div id="mainSports" class="container">
+      </div>
+      </section>
+
+      <!-- Page Athletes -->
+      <section id="athletesPage" class="pageAthletes"style="display: none;">
+          <div class="athletesPages"><br>
+            <h1>FIND YOUR FAVORITE<br>ATHLETE</h1>
+          </div>
+        <!-- head -->
+        <div class="content">
+          <section class="filter-card">
+            <form class="form-search" id="searchA">  
+              <input type="text" placeholder=" Athletes" id="inputSearchAthletes"><i class="fas fa-search"></i>
+            </form>
+          </section>
+  
+          <section class="filter-card">
+            <div class="form-search">
+              <select class="" name="ordenar" id="orderAlpha">
+                <option value="0" selected disabled>Order</option>
+                <option value="1">A-Z</option>
+                <option value="2">Z-A</option>
+              </select>
+            </div>
+          </section>
+  
+          <section class="filter-card">
+            <div class="form-search">
+              <input type="search" id="teamRio" list="searchTeam" placeholder="Search Team" >
+              <datalist id="searchTeam">
+                <option value="All teams" ></option>
+              </datalist>
+            </div>
+          </section>
+  
+          <section class="filter-card">
+            <div class="form-search">
+              <input type="search" id="sportRio" list="search" placeholder="Search Sport">
+              <datalist id="search">
+              <option value="All"></option>
+              <option value="Archery"></option>
+              <option value="Athletics"></option>
+              <option value="Badminton"></option>
+              <option value="Basketball"></option>
+              <option value="Beach Volleyball"></option>
+              <option value="Boxing"></option>
+              <option value="Canoeing"></option>
+              <option value="Cycling"></option>
+              <option value="Diving"></option>
+              <option value="Equestrianism"></option>
+              <option value="Fencing"></option>
+              <option value="Football"></option>
+              <option value="Golf"></option>
+              <option value="Gymnastics"></option>
+              <option value="Handball"></option>
+              <option value="Hockey"></option>
+              <option value="Judo"></option>
+              <option value="Modern Pentathlon"></option>
+              <option value="Rhythmic Gymnastics"></option>
+              <option value="Rowing"></option>
+              <option value="Rugby Sevens"></option>
+              <option value="Sailing"></option>
+              <option value="Shooting"></option>
+              <option value="Swimming"></option>
+              <option value="Synchronized Swimming"></option>
+              <option value="Table Tennis"></option>
+              <option value="Taekwondo"></option>
+              <option value="Tennis"></option>
+              <option value="Trampolining"></option>
+              <option value="Triathlon"></option>
+              <option value="Volleyball"></option>
+              <option value="Water Polo"></option>
+              <option value="Weightlifting"></option>
+              <option value="Wrestling"></option>
+              </datalist>
+            </div>
+          </section>
+
+        </div>
+
+          <div class="content">
+            <section id="gender" class="filter-card gender hide">
+              <div class="form-search">
+                <input type="search" id="genderRio" list="searchGender" placeholder="Search Gender" >
+                <datalist id="searchGender">
+                  <option value="Male" ></option>
+                  <option value="Female" ></option>
+                </datalist>
+              </div>
+            </section>
+    
+            <section id="event" class="filter-card event hide">
+              <div class="form-search">
+                <input type="search" id="eventRio" list="searchEvent" placeholder="Search Event" >
+                <datalist id="searchEvent">
+                  <option value="All" ></option>
+                </datalist>
+              </div>
+            </section>
+          </div>
+        <!-- main -->
+        <div id="mainAthletes" class="container">
+        </div>
+      </section>
+    </main>
+    
+    <!-- <footer class="contentFooter"> 
+      © 2021 Julissa Huaman & Sonia Sayago - All Rights Reserved 
+    </footer> -->
+
     <script src="main.js" type="module"></script>
-  </body>
+    <script src="slideshow.js" type="module"></script>
+
+  </body> 
 </html>
