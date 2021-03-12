@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+} 
+header {
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 1px 5px #000;  
+}
+body{
+  background-image: url(Fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.headerContent{
+    display: flex;
+    justify-content: space-between;     
+}
+.logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+.mainBar nav {
+    height: 130%;
+    font-size: 25px;   
+}
+.mainBar ul {
+    height: 75%;
+    display: flex;
+   
+}
+.mainBar ul li {
+    height: 100%;
+    margin: 0px 60px;
+    display: flex;
+    align-items: center;
+}
+.mainBar ul li a{
+    color: white;
+    text-decoration: none;
+    border-left: 2px solid #937341;
+    padding-left: 40px;
+}
+#firstHome{
+    background-image: url("PrimerPersonaje1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#titleL{
+   font-size: 45px;
+    color: white;
+    margin-left: 8%;
+    border-left: 15px solid #937341;
+    padding-left: 3%;
+    border-radius: 3%;
+    margin-right: 60%;
+    margin-top: 10%;
+}
+#firstParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 40%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+ #secondHome{
+    background-image: url("Viego2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+ h2{
+   font-size: 50px;
+    color: white;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+ #textSecond{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 65%;
+  }
+#secondParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 55%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+#thirdHome{
+    background-image: url("Sylas2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+ h3{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+ .buttonC{
+  display: flex;
+  justify-content: space-between;
+}
+.buttonC ul {
+    background-color: #FFEA2F;
+    padding: 1% 4%;
+    border-radius: 25px;
+    margin-top: 2.5%;
+    margin-right: 3%;
+    margin-bottom: auto;
+    list-style: none;  
+}
+.buttonC ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
+ #textThird{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 65%;
+  }
+#thirdParagraph{
+    font-size: 28px;
+    color: white;
+    border-left: 5px solid #937341;
+    padding-left: 3%;
+    margin-left: 68%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  h1{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+  }
+  #parraf{
+    display: flex;
+    font-size: 38px;
+    justify-content: center;
+  }
+  #selectors{
+    display: flex;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 1px 5px #000;
+    padding: 1% 5%;
+    width: 800px;
+    margin: 20px auto;
+    height: 25px;
+  }
+
+  #clean{
+    background-color: rgb(247, 250, 49);
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+ 
+  input{
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+  select{
+    background-color: white;
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+
+
+
+#containCards{
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+.cardsPlayers{
+  margin-left: 3%;
+}
+.imgPlayers{
+  width: 252px;
+}
+.namePlayers{
+      background-color: black;
+      padding: 3% 5%;
+      border-radius: 10px;
+      margin-bottom: 10%;
+      margin-top: -5%;
+}
+.imageB{
+  background-color: black;
+  border-color: black;
+}
+
+.imageB:hover{
+  background-color: rgb(219, 169, 30);
+  border-color: rgb(231, 220, 55);
+}
+
+
+.modalBackground{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 102vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+ 
+}
+
+
+.modal{
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+h4{
+  color: #e2a33e;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -6%;
+}
+.modalContent{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  border-radius: 20px 20px 20px 20px;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 10%;
+}
+.modalContent p{
+  color: white;
+  text-align: center;
+  margin-right: 5%;
+}
+.modalContent p br{
+  display: none;
+}
+.modifications{
+  margin-top: 18%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  margin-right: 24%;
+  margin-left: 30%;
+}
+.info{
+  font-size: 17px;
+  margin-top: 12%;
+  margin-bottom: 1%;
+  padding-left: 7%;
+  line-height: 40px;
+}
+.levels{
+  margin-left: 6%;
+  margin-right: 6%;
+  display: flex;
+  align-items: baseline;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  height: 87px;
+  padding-left: 5%;
+  padding-top: 1%;
+} 
+#close{
+  color: white;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  margin-left: -119px;
+  margin-bottom: 534px;
+  position: relative;
+  width: 40px;
+}
+
+.bottonScroll{
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  bottom: 4rem;
+  right: 0rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: -1;
+}
+.pressButton{
+   width: 0rem;
+   height: 0rem;
+    background: #e2a33e;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    transform: translate(-20%, 2%);
+    z-index: -1;
+}
+.pressButton p{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    transition: .2s;
+}
+.show{
+  z-index:10;
+}
+.show .pressButton{
+  animation: popup .3s ease-in-out;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: 11;
+}
+.show p{
+  transform: translate(-50%, -50%)scale(1);
+}
