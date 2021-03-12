@@ -32,6 +32,7 @@ body{
 .mainBar ul {
     height: 75%;
     display: flex;
+   
 }
 .mainBar ul li {
     height: 100%;
@@ -169,6 +170,14 @@ body{
     margin: 20px auto;
     height: 25px;
   }
+
+  #clean{
+    background-color: rgb(247, 250, 49);
+    width: 200px;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+ 
   input{
     width: 200px;
     margin-right: 2%;
@@ -180,6 +189,9 @@ body{
     margin-right: 2%;
     border-radius: 10px;
   }
+
+
+
 #containCards{
   display: flex;
   justify-content: center;
@@ -205,7 +217,14 @@ body{
   background-color: black;
   border-color: black;
 }
-.modal{
+
+.imageB:hover{
+  background-color: rgb(219, 169, 30);
+  border-color: rgb(231, 220, 55);
+}
+
+
+.modalBackground{
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -216,17 +235,18 @@ body{
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
-  align-items: center; 
-  
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+ 
 }
-.modalContain{
+
+
+.modal{
   border-radius: 20px;
   visibility: hidden;
   opacity: 0;
-  transition: transform 1s;
-  transform: translateY(-1%);
-  transform: translateX(-10%);
 }
+
 h4{
   color: #e2a33e;
   font-size: 45px;
@@ -239,9 +259,9 @@ h4{
   background-repeat: no-repeat;
   display: flex;
   border-radius: 20px 20px 20px 20px;
-  width: 94%;
-  max-width: 960px;
-  margin: 0 13%;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 10%;
 }
 .modalContent p{
   color: white;
@@ -290,176 +310,43 @@ h4{
   position: relative;
   width: 40px;
 }
-@media (min-width: 320px) and (max-width: 1023px){ 
-.logo{
-  height: 50px;
-}
-.imgLogo{
-  width: 86px;
-}
-.mainBar nav {
-  font-size: 18px;  
-}
-.mainBar ul li {
-margin: 0px 20px;
-padding-left: 6px;
-}
-.mainBar ul li a{
-padding-left: 15px;
-}
-h1{
-font-size: 35px;
-}
-#titleL{
-border-left: 9px solid #937341;
-}
-#firstParagraph{
-font-size: 13px;
-border-left: 3px solid #937341;
-}
-h2{
-font-size: 27px;
-}
-#textSecond{
-font-size: 13px;
-border-left: 3px solid #937341;
-}
-#secondParagraph{
-font-size: 13px;
-border-left: 3px solid #937341;
-}
-h3{
-font-size: 26px;
-}
-.buttonC ul li a{
-font-size: 91%;
-} 
-#textThird{
-font-size: 13px;
-border-left: 3px solid #937341;
-}
-#thirdParagraph{
-font-size: 13px;
-margin-left: 55%;
-border-left: 3px solid #937341;
-}
-#parraf{
-font-size: 26px;
-}
-#selectors{
-align-content: space-between;
-flex-wrap: wrap;
-justify-content: center;
-width: 396px;
-height: 111px;
-padding: 3% 5%;
-}
-input{
-height: 50px;
-width: 165px;
-margin-left: 1%;
-margin-bottom: 2%;
-}
-select{
-height: 50px;
-width: 165px;
-margin-bottom: 4%;
-margin-left: 2%;
-}
-.imgPlayers{
-width: 143px;
-}
-.modal{
-height: 153vh;
-}
-.modalContain{
-margin-top: -14%;
-}
-h4{
-font-size: 26px;
-}
-.info{
-font-size: 13px;
-}
-.modifications{
-margin-left: 9%;
-margin-right: 12%;
-margin-top: 39%;
-}
-.levels{
-margin-left: 14%;
-padding-right: 8%;
-padding-left: 9%;
-padding-top: 0%;
-justify-content: center;
-}
-}
-@media (min-width: 320px) and (max-width: 599px){
-.headerContent{
-display: inherit;
-}
-.imgLogo{
-width: 100px;
-margin-left: 35%;
-}
-.mainBar nav{
-font-size: 16px;
-}
-.mainBar ul{
-justify-content: center;
-padding-bottom: 3%;
-}
-.mainBar ul li {
-padding-left: 0px;
-}
-.mainBar ul li a {
-padding-left: 12px;
-}
-#titleL{
- padding-left: 13%;
-}
-#selectors{
-width: 267px;
-height: 84px;
-}
-input{
-height: 35px;
-width: 126px;
-}
-select{
-height: 35px;
-width: 122px;
-}
-.modalContain {
-margin-top: -97%;
-}
-#close{
-font-size: 28px;
-margin-bottom: 825px;
-margin-left: -82px;
-}
-}
-@media (min-width: 600px) and (max-width: 1023px){
-#textThird{
-  margin-top: 3%;
-}
-#thirdParagraph{
-  margin-top: 10%;
-}
-#textSecond{
-margin-top: 3%;
-}
-#secondParagraph{
-  margin-top: 10%;
-}
-#close{
-  font-size: 28px;
-  margin-left: -91px;
-  margin-bottom: 990px;
-}
 
-.modalContent{
-margin-top: -391px;
+.bottonScroll{
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  bottom: 4rem;
+  right: 0rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: -1;
 }
-
+.pressButton{
+   width: 0rem;
+   height: 0rem;
+    background: #e2a33e;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    transform: translate(-20%, 2%);
+    z-index: -1;
+}
+.pressButton p{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    transition: .2s;
+}
+.show{
+  z-index:10;
+}
+.show .pressButton{
+  animation: popup .3s ease-in-out;
+  width: 5.5rem;
+  height: 5.5rem;
+  z-index: 11;
+}
+.show p{
+  transform: translate(-50%, -50%)scale(1);
 }
