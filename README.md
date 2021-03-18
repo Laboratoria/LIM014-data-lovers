@@ -2,10 +2,15 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
+* [1. Descripción del producto  digital](#1-descripción-del-producto_digital)
+ - Análisis UX
+* [2. Objetivos de la página](#2-objetivos-de-la-página)
+* [3. Historias de usuario](#3-historias-de-usuario)
+- HISTORIA DEL USUARIO 1 (H.U.1)
+- HISTORIA DEL USUARIO 2 (H.U.2)
+- HISTORIA DEL USUARIO 3 (H.U.3)
+- HISTORIA DEL USUARIO 4 (H.U.4)
+* [4. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
@@ -14,73 +19,165 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Descripción del producto digital 👩‍💻💻
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+## Análisis UX: ✏️
+Es una página web que permite al usuario (novatos y experimentados), mostrar todos los pokemones, filtrar y ordenar la lista de **Pokemon** para seleccionar uno en específico  o por ligas, habilidades especiales y ver sus estadísticas generales (more stats) y principales (ataque, defensa), ello con el objetivo de tener una mayor información de cual usar para combatir una lucha **Pokemón**.
+[Planning 👉Trello](https://trello.com/b/GhE9iODV/proyectolaboratoriadatalovers)
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+`¿Quienes son los principales usuarios del producto?`
+<br>
+Todos aquellos a los cuales les guste el juego de Pokemon, no hay una población en edades referenciales, dado que a cualquier
+edad uno puede gustarle ello.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+`¿Cuáles son los objetivos de estos usuarios en relación con el producto?`
+<br>
+El objetivo de estos jugadores es poder conocer las caracteristicas especiales de cada pokemón que lo ayudará o sera escencial 
+para una determinada competencia (De los 200 pokemones del juego), saber sus evoluciones de los mismos y así luchar y ganar en el campo de batalla.
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+`¿Cuáles son los datos mas importantes que quieren ver en la interfaz y por qué?`
+<br>
+* Poder ver a los Pokemones por imagen y ver sus carcateristicas y habilidadess principales<br>
+* Una barra de navegación para filtrar y ordenar la vista de la lista de los pokemones.<br>
+* Información estadística de los pokemones, tales como su ataque, defensa, armadura,poder de habilidad, entre otros. <br>
+* Un promedio de las estadísticas por rol para que el usuario pueda identificar las fortalezas y debilidades de cada tipo. <br>
 
-## 2. Resumen del proyecto
+`¿Cuáles son los objetivos de estos usuarios en relación con el producto?`
+<br>
+Su objetivo es tener la información mas completa de los pokemones y sus carcateristicas para jugar y ganar la competencia.
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+`¿Cuándo utilizan o utilizarían el producto?`
+<br>
+A la hora de planear una estrategia de juego, para conocer mejor a su campeón y poder acceder a los datos de sus caracteristicas (competidor enemigos). Los usuarios suelen buscar las estadisticas del equipo enemigo para desarrollar de esa manera la estrategia adecuada.
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+## 2. Objetivos de la página 🎯
 
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+Visualizar la data,filtrarla, ordenarla y hacer algún cálculo agregado(Con cálculo agregado) nos referimos a distintos cálculos que puedes hacer con la data para mostrar información aún más relevante para los usuarios (promedio, el valor máximo o mínimo, etc).
 
-Estos son datos que te proponemos:
+## 3. Historias de usuario 👨‍🦱👩‍🦰💻
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+Las historias de usuario se trabajaron con la herramienta trello en el siguiente [link](https://docs.google.com/spreadsheets/d/1GsK5vld-C2ez0haIdeOaHLzAGcNznEmK/edit#gid=1442775653) donde se puede visualizar 4 historias de usuario que donde cada una consiste con criterios de aceptación, definición de terminado y pequeñas tareas en las cuales fueron subdivididas.
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+***************************************
+```js
+HISTORIA DEL USUARIO 1 (H.U.1): 
+```
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
+**HU1**: Pantalla de inicio : COMO jugador@ de **Pokemon** DESEO leer una breve descripción del juego e ingresar mi nombre, PARA sentir la experiencia más personalizada y tener una idea general de que trata el juego.
 
-* [Juegos Olímpicos de Río de Janeiro](src/data/athletes/athletes.json).
-  Este set nos proporciona la lista de los atletas que ganaron medallas en las
-  olímpiadas de Río de Janeiro.
-  - [Investigación con interesados en juegos olímpicos de Río de Janeiro](/src/data/athletes/README.md)
+**Criterios de aceptación:** 💡
+<br>
+-Que el usuario visualice una pantalla de inicio.<br>
+-Que el usuario pueda ingresar su nombre en un campo (input).<br>
+-Que el usuario pueda darle click a un botón que lo dirija a una siguiente pagina donde vera un listado de los 200 pokemones.
 
-## 3. Objetivos de aprendizaje
+**Definición de terminado:** ✔ 
+<br>
+-Pagina responsive .<br>
+-Usar eslint para evaluación de código en Js (correcciones de sintaxis).<br>
+-Subir a github <br>
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
+**Testing con usuarios** :
+
+1. Al inicio no entendían (como figura en la primera HU) que era Pokemon.
+2. Resaltaron que querian que fuera más personalizado (por lo que hicimos un input de 'ingrese su nombre') 
+3. Resaltaron que se les hacia mas fácil agregar un botón que los dirija a ver a todos los pokemones, por lo cual 
+se optó por poner un botón de **Enter** que cumpla esta funcionalidad.
+4. El testing de la primera historia fue aprobada por los usuarios.
+
+## Prototipado BAJA FIDELIDAD 
+![](./src/assets/HU/int1BFmofidicada.jpeg) <!-- Aqui agregar imagen de baja fifelifdad -->
+
+## Prototipado ALTA FIDELIDAD 
+[MIRA EL 👉 FIGMA](LINK DE FIGMA)
+![Portada](https://user-images.githubusercontent.com/60514118/109263223-e68f8380-77d0-11eb-97a8-804a3bd89424.JPG)
+
+
+**********************************
+```js
+HISTORIA DEL USUARIO 2 (H.U.2): 
+```
+
+**HU2**: Visualizar los pokemones por tipo,la lista de pokemones para verlos por orden alfabetico y al reverso (Z -> A), en geneal y tambien por tipo, ordenarlos por nivel de combate, 
+
+**Criterios de aceptación:** 💡
+<br>
+ - Como jugador quiero que se muestren los tipos de liga (rango de CP-poder de combate) para saber qué pokemones están habilitados a participar.<br>
+ - Como usuario quiero que se muestren los atributos como (ataque, defensa, histamina) para saber qué tan fuerte es mi pokemón.<br>
+ - Como usuario quiero que me muestren filtros de resistencia y debilidad para seleccionar el mejor contrincante.<br>
+
+**Definición de terminado:** ✔ 
+<br>
+-Hacer responsive la página.<br>
+-Hacerle testing al resultado (Pruebas unitarias).<br>
+-Usar lint para evaluación de código (correcciones de sintaxis).<br>
+-Subir a github.<br>
+-Desplejar en Github pages.<br>
+
+## Prototipado BAJA FIDELIDAD 
+![]( ) <!-- Aqui agregar imagen de baja fifelifdad -->
+
+## Prototipado ALTA FIDELIDAD 
+[MIRA EL 👉 FIGMA](LINK DE FIGMA)
+![HU2](https://user-images.githubusercontent.com/60514118/109264497-13dd3100-77d3-11eb-84f4-842bd516a5c4.JPG)
+
+
+**********************************
+```js
+HISTORIA DEL USUARIO 3 (H.U.3): 
+```
+**HU2**: Como jugador@ de **Pokemon** deseo saber la cantidad de caramelos le faltan a mi **Pokemon** para que evolucione.
+
+**Criterios de aceptación:** 💡
+<br>
+ - Como usuario quiero que se muestren los caramelos para identificar cuanto me falta para evolucionar mi pokemon.<br>
+ - Mostrar la imagen de la siguiente evolución (Si existe) y la previa evolución (Si existe), de mi Pokemon.<br>
+
+**Definición de terminado:** ✔ 
+<br>
+-Hacer una pantalla modal para mostrar la cantidad de caramelos y las evoluciones.<br>
+-Hacerle testing al resultado (Pruebas unitarias).<br>
+-Usar lint para evaluación de código (correcciones de sintaxis).<br>
+-Subir a github.<br>
+-Desplejar en Github pages.<br>
+
+## Prototipado BAJA FIDELIDAD 
+![]( ) <!-- Aqui agregar imagen de baja fifelifdad -->
+
+## Prototipado ALTA FIDELIDAD 
+[MIRA EL 👉 FIGMA](LINK DE FIGMA)
+![modal](https://user-images.githubusercontent.com/60514118/109265233-33288e00-77d4-11eb-87bb-a019e4a296a1.JPG)
+
+**********************************
+```js
+HISTORIA DEL USUARIO 4 (H.U.4): 
+```
+**HU2**: Como jugador@ de **Pokemon** quiero conocer el Top 10 de mis **Pokemones** segun **spawn-chance**.
+
+**Criterios de aceptación:** 💡
+<br>
+ - Como jugador@ de Pokemon deseo saber cuáles son los 10 mejores Pokemon con los cuales debo luchar para alcanzar la victoria.<br>
+
+**Definición de terminado:** ✔ 
+<br>
+-Hacer un botón que me indique ello, además mostrar por la pantalla cuáles son dichos Pokemon que cumplen con los estándares impuestos<br>
+-Hacerle testing al resultado (Pruebas unitarias).<br>
+-Usar lint para evaluación de código (correcciones de sintaxis).<br>
+-Subir a github.<br>
+-Desplejar en Github pages.<br>
+
+## Prototipado BAJA FIDELIDAD 
+![]( ) <!-- Aqui agregar imagen de baja fifelifdad -->
+
+## Prototipado ALTA FIDELIDAD 
+[MIRA EL 👉 FIGMA](LINK DE FIGMA)
+![HU2](https://user-images.githubusercontent.com/60514118/109264497-13dd3100-77d3-11eb-84f4-842bd516a5c4.JPG)
+
+
+## 4. Objetivos de aprendizaje 
+
+El objetivo principal de este proyecto es que aprendas a diseñar y construir una interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el usuario necesita.
 
 ### HTML y CSS
 
@@ -131,14 +228,7 @@ usuario necesita.
 * [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 * [ ] Planear y ejecutar tests de usabilidad.
 
-## 4. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.
-
-## 5. Criterios de aceptación mínimos del proyecto
+## 5. Criterios de aceptación mínimos del proyecto 👩‍💻👨‍💻
 
 Los criterios para considerar que has completado este proyecto son:
 
@@ -203,7 +293,7 @@ Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
 (_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
 en la sección de [Consideraciones técnicas](#srcdatajs).
 
-## 6. Hacker edition
+## 6. Hacker edition 👩‍💻👨‍💻
 
 Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
 con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
@@ -221,7 +311,7 @@ Features/características extra sugeridas:
   o [Google Charts](https://developers.google.com/chart/).
 * 100% Coverage
 
-## 7. Consideraciones técnicas
+## 7. Consideraciones técnicas 👩‍💻👨‍💻
 
 La lógica del proyecto debe estar implementada completamente en JavaScript
 (ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
@@ -347,7 +437,7 @@ asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_A
 Tendrás también que completar las pruebas unitarias de las funciones
 implementadas en el archivo `data.js`.
 
-## 8. Pistas, tips y lecturas complementarias
+## 8. Pistas, tips y lecturas complementarias 👩‍💻👨‍💻
 
 ### Primeros pasos
 
@@ -423,7 +513,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [Node.js](https://nodejs.org/)
 * [Jest](https://jestjs.io/)
 
-#### Organización del Trabajo
+#### Organización del Trabajo 
 
 * [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
   Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
@@ -431,7 +521,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
 * [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
 
-## 9. Checklist
+## 9. Checklist 👩‍💻👨‍💻
 
 * [ ] Usa VanillaJS.
 * [ ] No hace uso de `this`.
@@ -452,3 +542,8 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+
+
+
+
+
