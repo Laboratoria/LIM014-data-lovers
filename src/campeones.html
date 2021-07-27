@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
-    <link rel="icon" type="image/png" href="iconLogo.png">
+    <link rel="icon" type="image/png" href="img/iconLogo.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="headerContent">
         <div class="logo">
-          <img src="logo.png" class="imgLogo" alt="logo" width="150">
+          <img src="img/logo.png" class="imgLogo" alt="logo" width="150">
         </div>
         <div class="mainBar">
           <nav class="navContainer">
             <ul>
               <li><a href="index.html">Inicio</a></li>
               <li><a href="campeones.html">Campeones</a></li>
-              <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index">Quiero Jugar</a></li>  
+              <li><a href="https://signup.lan.leagueoflegends.com/es/signup/index">Quiero Jugar</a></li>
             </ul>
           </nav>
         </div>
@@ -31,37 +31,47 @@
   <h1>Campeón</h1>
   <section id= "selectors">
     <input type="search" id="searchOne" list="search" placeholder=" Buscar">
-    
-  <datalist id="search"></datalist>
-  
-<select class="selector" name="Roles" id= "roleSelector">
-  <option value="" disabled selected>Roles</option>
-  <option value="Assassin">Asesinos</option>
-  <option value="Fighter">Luchadores</option>
-  <option value="Mage">Magos</option>
-  <option value="Marksman">Tiradores</option>
-  <option value="Support">Apoyo</option>
-  <option value="Tank">Tanques</option>
-</select>
-<select class="orden" name="Orden" id="selectOrden">
-  <option value="" disabled selected>Orden</option>
-  <option value="az">A-Z</option>
-  <option value="za">Z-A</option>
-</select>
-<select class ="levelPlayers" id="playersLevel" name="Niveles de Dificultad" >
-  <option value="" disabled selected>Niveles de Dificultad</option>
-  <option value="facil">Fácil</option>
-  <option value="medio">Medio</option>
-  <option value="dificil">Difícil</option>
-</select>
-<button id="clean">Limpiar</button>
+    <datalist id="search"></datalist>
+
+    <select class="selector" name="Roles" id= "roleSelector">
+      <option value="" disabled selected>Roles</option>
+      <option value="Assassin">Asesinos</option>
+      <option value="Fighter">Luchadores</option>
+      <option value="Mage">Magos</option>
+      <option value="Marksman">Tiradores</option>
+      <option value="Support">Apoyo</option>
+      <option value="Tank">Tanques</option>
+    </select>
+    <select class="orden" name="Orden" id="selectOrden">
+      <option value="" disabled selected>Orden</option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
+    <select class ="levelPlayers" id="playersLevel" name="Niveles de Dificultad" >
+      <option value="" disabled selected>Niveles de Dificultad</option>
+      <option value="facil">Fácil</option>
+      <option value="medio">Medio</option>
+      <option value="dificil">Difícil</option>
+    </select>
+    <button id="clean">Limpiar</button>
   </section>
 
   <div id="containCards"></div>
 
-
-
   <div class="modalBackground">
     <div class="modal"></div>
-  
+    <button id="close">x</button>
+  </div>
+  <div class="bottonScroll">
+    <div class="pressButton">
+      <p><img src="./img/flechas.png" alt=""></p>
+    </div>
+  </div>
+
+</main>
+<script src="main.js" type="module"></script>
+
 </html>
+
+
+

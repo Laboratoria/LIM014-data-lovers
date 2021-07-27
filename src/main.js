@@ -1,3 +1,31 @@
+/*  // import {orderFunction, dataSort, filterLevel, filterData, filterName} from './data.js'
+import data from './data/lol/lol.js';
+
+// Trae un objeto
+console.log(data);
+
+ console.group("Funciones Óptimas")
+console.log(orderFunction(dataArray));
+console.log("dataSort", dataSort(dataArray, "za"));
+console.log("filterLevel", filterLevel(dataArray, 'dificil'));
+console.log("filterData", filterData(dataArray, "Fighter"));
+console.log("filterName", filterName(dataArray, "Aatrox"));
+console.groupEnd()
+
+const paintModal = element => {
+  const card = document.createElement("div")
+  card.innerHTML = `<button class="imageB" widht=130 ><img class="imgPlayers" alt="${element[1].name}" src= "${element[1].splash}">
+  <div class="namePlayers"<p> ${element[1].name.toUpperCase()} </p></div></button>`
+  card.className ="cardsPlayers"
+  document.getElementById("containCards").appendChild(card);
+
+  }
+//Constante para entrar en la data
+const players = Object.entries(data.data);
+// Plasmar las cards en el div "containCards"
+players.forEach(paintModal); */
+
+
 import {dataSort, filterLevel, filterData, filterName} from './data.js';
 import data from './data/lol/lol.js';
 
@@ -7,23 +35,22 @@ const players = Object.values(data.data); //Array con todos los elementos
 //console.log(players[1].tags);
 
 const showCards = (data) => {
-    
 
     const containCards = document.getElementById('containCards');
     containCards.innerHTML = '';
     //element es cada uno de los elementos de array, el array es players.
     const principalFunction = (element) => {
-       
 
         const card = document.createElement("div");
-        card.innerHTML = 
-        
-        `<button class="imageB" >
+        card.innerHTML =
+
+        `
+        <button class="imageB" >
             <img class="imgPlayers" alt="${element.name}" src= "${element.splash}">
-            
+
         </button>
         <div class="namePlayers"><p> ${element.name.toUpperCase()} </p></div>`
-     
+
         card.className = "cardsPlayers"
 
         card.addEventListener("click",() => {
@@ -40,10 +67,10 @@ const showCards = (data) => {
                         <h4>${element.name.toUpperCase()}</h4>
                         <div class = "info"><p>${element.blurb}</p></div>
                         <div class = "levels">
-                            <p>Defensa: ${element.info.defense}</p>
-                            <p>Ataque: ${element.info.attack}</p>
-                            <p>Magia: ${element.info.magic}</p>
-                            <p>Dificultad: ${element.info.difficulty}</p>
+                            <p><img src="https://img.icons8.com/doodle/48/000000/knight-shield.png"/>Defensa: ${element.info.defense}</p>
+                            <p><img src="https://img.icons8.com/color/48/000000/stick-fighting.png"/>Ataque: ${element.info.attack}</p>
+                            <p><img src="https://img.icons8.com/emoji/48/000000/magic-wand.png"/>Magia: ${element.info.magic}</p>
+                            <p><img src="https://img.icons8.com/color/48/000000/effort.png"/>Dificultad: ${element.info.difficulty}</p>
                         </div>
                     </div>
                 </section>`
@@ -60,13 +87,11 @@ const showCards = (data) => {
 
 
           })
-    
-            document.getElementById("containCards").appendChild(card)         
+
+            document.getElementById("containCards").appendChild(card)
         };
             data.forEach(principalFunction);
     }
-    
- 
 
 
 
@@ -97,21 +122,23 @@ clean.addEventListener("click", cleaning)
 
 
 function generalFilter (data) {
-    
+
     let byTagsName = filterData(data, roleSelector.value);
     let filtering = filterLevel(byTagsName, playersLevel.value);
-    let nameFilter = filterName(filtering, filterSearch.value);  
+    let nameFilter = filterName(filtering, filterSearch.value);
     let sorting = dataSort(nameFilter, selectOrden.value);
-    
+
     showCards(sorting);
-    
+
     if(nameFilter == ""){
+      const containCards = document.getElementById('containCards');
+      containCards.innerHTML = '';
         alert("Este champeón no tiene el rol selecionado")
     }
-    
+
 
 }
-        
+
 function cleaning () {
     selectOrden.value = '';
     playersLevel.value = '';
@@ -133,78 +160,3 @@ document.querySelector(".bottonScroll").addEventListener("click", () =>{
         behavior:'smooth'
     });
 })
- 
-
-
-/* 
- //ORDENAR ZA Y AZ
-const selectOrden = document.getElementById("selectOrden");
-selectOrden.addEventListener("change", () => {
-    const sortingAZ = dataSort(players, selectOrden.value)
-    showCards(sortingAZ);    
-})
-
-//ORDENAR 
-const playersLevel = document.getElementById("playersLevel");
-playersLevel.addEventListener("change", () => {
-    const filtering = filterLevel(players, playersLevel.value)
-    showCards(filtering);    
-})
-
-
-const roleSelector = document.getElementById("roleSelector");
-roleSelector.addEventListener("change", () => {
-    const byTagsName = filterData(players, roleSelector.value)
-    showCards(byTagsName);
-}) 
-
-const filterSearch = document.getElementById("searchOne");
-filterSearch.addEventListener("change", () => {
-    const nameFilter = filterName(players, filterSearch.value)
-    showCards(nameFilter); 
-}); 
-    
- */
-
-
-/* let selectOrden = document.getElementById("selectOrden");
-let playersLevel = document.getElementById("playersLevel");
-let roleSelector = document.getElementById("roleSelector");
-let filterSearch = document.getElementById("searchOne");
-let clean = document.getElementById("clean");
-
-
-selectOrden.addEventListener("change", () => generalFilter(players));
-playersLevel.addEventListener("change", () => generalFilter(players));
-roleSelector.addEventListener("change", () => generalFilter(players));
-filterSearch.addEventListener("change", () => searchFilter(players));
-clean.addEventListener("click", cleaning)
-
-function generalFilter (data) {
-    
-    let byTagsName = filterData(data, roleSelector.value);
-    let filtering = filterLevel(byTagsName, playersLevel.value);
-    let sorting = dataSort(filtering, selectOrden.value);
-    
-    
-    //console.log(sortingAZ);
-    //console.log(byTagsName);
-    //console.log(filtering);
-    //console.log(playersLevel.value);
-
-    showCards(sorting);    
-   
-}  
-
-function searchFilter (data) {
-    let nameFilter = filterName(data, filterSearch.value);   
-    showCards(nameFilter); 
-} 
-function cleaning () {
-    selectOrden.value = '';
-    playersLevel.value = '';
-    roleSelector.value = '';
-    filterSearch.value = '';
-    showCards(players);
-} */
-
